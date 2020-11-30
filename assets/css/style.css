@@ -1,0 +1,416 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Cairo', sans-serif;
+}
+*,h1,h2,h3,h4,h5,h6{
+    text-transform: capitalize;
+}
+nav button.navbar-toggler{
+    outline: none;
+}
+footer{
+    background: #222222;
+    color: #9d9d9d;
+    font-weight: 600;
+}
+footer h4{
+    color: #9d9d9d;
+    font-weight: 600;
+}
+footer #author{
+    background: #191919;
+}
+footer #author p{
+    direction: ltr;
+}
+footer div ul li a{
+    color: #9d9d9d;
+}
+footer div#arrow-scrl{
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;
+    right: 1vw;
+    display: none;
+}
+footer div#arrow-scrl button{
+    background: #228dcb;
+    border: #eeeeee solid 1px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    outline: none;
+}
+footer div#arrow-scrl button svg{
+    color: #eeeeee;
+}
+section#slider div ul li img{
+    height: 600px !important;
+}
+section#search div{
+    background: rgb(34, 141, 203);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: #fff;
+}
+section#search div h2{
+    color: #fff;
+}
+section#search button{
+    width: 100%;
+    font-size: 20px;
+}
+section#home-sec4 div div{
+    border: rgb(243, 241, 241) solid 3px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+section#home-sec5{
+    background: #eeeeee;
+}
+section#home-sec5 div div ul{
+    background: #fff;
+    border-radius: 30px;
+}
+section#home-sec5 div div ul li a{
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 700;
+}
+section#home-sec5 div ul li div{
+    width: 85%;
+    margin: auto;
+}
+section#home-sec5 div ul li div img{
+    height: 200px !important;
+}
+section#home-sec6{
+    background-image: url("../images/empty_road.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+section#home-sec6 div#overlay{
+    background-color: rgba(0,0,0,0.5);
+}
+section#home-sec6 div#overlay div div a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    background-color: #228dcb;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    padding: 2%;
+    font-weight: 900;
+    border-radius: 50%;
+}
+section#home-sec7{
+    width: 90%;
+    margin: auto;
+}
+section#home-sec7 div ul li img{
+    width: 70px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+section#contact-sec1{
+    background-image: url("../images/contact.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+section#contact-sec1 div{
+    background-color: rgba(0,0,0,0.7);
+    padding: 6% 0;
+}
+section#contact-sec1 div h1{
+    color: #eeeeee;
+    font-weight: bold;
+}
+
+section#branches-sec1{
+    background-image: url("../images/contact.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+section#branches-sec1 div{
+    background-color: rgba(0,0,0,0.7);
+    padding: 6% 0;
+}
+section#branches-sec1 div h1{
+    color: #eeeeee;
+    font-weight: bold;
+}
+
+section#brands-sec1{
+    background-image: url("../images/car-logos.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+section#brands-sec1 div{
+    background-color: rgba(0,0,0,0.7);
+    padding: 6% 0;
+}
+section#brands-sec1 div h1{
+    color: #fff;
+    font-weight: bold;
+}
+section#brands-sec2 div.row{
+    width: 80%;
+    margin: auto;
+}
+section#brands-sec2 div a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #dbdbdb solid 2px;
+    height: 100%;
+    padding: 5%;
+}
+section#brands-sec2 div a img{
+    display: block;
+    width: 100px;
+    height: auto;
+}
+section#carsmenu-sec2 div div img{
+    height: 250px;
+}
+section#carsmenu-sec2 div.row{
+    width: 80%;
+    margin: auto;
+}
+section#selectedcar-sec1{
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+section#selectedcar-sec1 div{
+    background-color: rgba(0,0,0,0.7);
+    padding: 6% 2%;
+}
+section#selectedcar-sec1 div h1,section#selectedcar-sec1 div h2{
+    text-align: right;
+    color: #fff;
+    font-weight: bold;
+}
+section#selectedcar-sec2 div div div ul.uk-slideshow-items li img{
+    height: 500px !important;
+}
+section#selectedcar-sec2 div.uk-box-shadow-small{
+    background-color: #228dcb;
+    color: #fff;
+    font-weight: 900;
+}
+#paginationMobileView{
+    display: none;
+}
+#carmenu_searchbox div{
+    padding: 3% 0 3% 0;
+    max-width: 70%;
+    background-color: #228dcb;
+}
+#carmenu_searchbox div form{
+    width: 85%;
+}
+#carmenu_searchbox div ul{
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    height: 50px;
+}
+#carmenu_searchbox div ul li:nth-child(1){
+    width: calc(100% - 68%);
+}
+#carmenu_searchbox div ul li:nth-child(2){
+    width: calc(100% - 42%);
+}
+#carmenu_searchbox div ul li:nth-child(3){
+    width: calc(100% - 90%);
+}
+#carmenu_searchbox div ul li input{
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 16px;
+    border-left: #dddddd solid 1px;
+    padding: 0 3%;
+}
+#carmenu_searchbox div ul li button{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    outline: none;
+    background-color: #222222;
+}
+#carmenu_searchbox div ul li select{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0 3%;
+    border-left: #dddddd solid 1px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-appearance: none;
+}
+@media (max-width: 575.98px){
+    #carmenu_searchbox div{
+        max-width: 95%;
+    }
+    #carmenu_searchbox div form{
+        width: 95%;
+    }
+    #carmenu_searchbox div ul li input{
+        font-size: 14px;
+    }
+    #carmenu_searchbox div ul li select{
+        font-size: 14px;
+    }
+    #carmenu_searchbox div ul li button{
+        padding: 0 5%;
+    }
+    #paginationMobileView{
+        display: block;
+    }
+    #paginationpcView{
+        display: none;
+    }
+    h1{
+        font-size: 23px;
+        width: 85%;
+    }
+    h2{
+        font-size: 21px;
+    }
+    iframe{
+        width: 100% !important;
+    }
+    nav div a img{
+        height: 40px;
+        width: 40px;
+    }
+    section#slider div ul li img{
+        height: 300px !important;
+    }
+    section#search{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    section#search div{
+        width: 90% !important;
+    }
+    section#search input{
+        width: 95%;
+    }
+    section#search button{
+        width: 86%;
+    }
+    section#search select{
+        width: 95%;
+    }
+    section#home-sec3{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    section#home-sec3 h2{
+        font-size: 23px;
+        width: 70% !important;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+    section#home-sec5 div div ul li a{
+        border-radius: 30px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    #home-sec5{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    #home-sec5 ul.list-unstyled li{
+        width: 100%;
+    }
+    section#home-sec7 div ul li img{
+        width: 50px;
+    }
+    section#contact-sec2{
+        padding-left: 4% !important;
+        padding-right: 4% !important;
+    }
+    section#brands-sec2 div a img{
+        width: 80px;
+    }
+    section#brands-sec2{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    section#carsmenu-sec2{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    section#selectedcar-sec2{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    section#selectedcar-sec2 div.row{
+        width: 100% !important;
+    }
+    section#selectedcar-sec2 div div div ul.uk-slideshow-items li img{
+        height: 300px !important;
+    }
+    section#selectedcar-sec3{
+        padding: 0 !important;
+    }
+    section#selectedcar-sec1{
+        background-attachment: initial;
+    }
+}
+@media (min-width: 575.98px) and (max-width: 1199.98px){
+    h1{
+        font-size: 23px;
+    }
+    h2{
+        font-size: 21px;
+    }
+    iframe{
+        width: 100% !important;
+    }
+    section#search div form div.row{
+        width: 100% !important;
+    }
+    section#search button{
+        width: 40%;
+        display: block;
+        margin: auto;
+    }
+    section#selectedcar-sec2{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    section#selectedcar-sec2 div.row{
+        width: 100% !important;
+    }
+    section#selectedcar-sec2 div div div ul.uk-slideshow-items li img{
+        height: 300px !important;
+    }
+    section#selectedcar-sec3{
+        padding: 0 !important;
+    }
+    section#selectedcar-sec3 div.row{
+        width: 90% !important;
+    }
+    section#selectedcar-sec2 div.row{
+        width: 95% !important;
+    }
+}
