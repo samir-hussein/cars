@@ -1,11 +1,3 @@
-<?php
-    session_start();
-    if($_SESSION['type'] == "admin"){
-        $this->response->redirect("/admin");
-        exit;
-    }
-?>
-
 <div class="card">
     <div class="card-header">
         <strong>Add Brand</strong>

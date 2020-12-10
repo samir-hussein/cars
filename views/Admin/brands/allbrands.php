@@ -34,7 +34,7 @@
                         ?>
                             <tr>
                                 <td><?=$row['name']?></td>
-                                <td><img src="../assets/images/<?=$row['image']?>" alt="..." width="250" height="150"></td>
+                                <td><img src="../assets/images/<?=$row['image']?>" alt="..." style="width:100px;height:auto"></td>
                                 <td>New</td>
                                 <td>
                                     <form action="" method="post">
@@ -53,7 +53,7 @@
                         ?>
                             <tr>
                                 <td><?=$row['name']?></td>
-                                <td><img src="../assets/images/<?=$row['image']?>" alt="..." width="250" height="150"></td>
+                                <td><img src="../assets/images/<?=$row['image']?>" alt="..." style="width:100px;height:auto"></td>
                                 <td>Used</td>
                                 <td>
                                     <form action="" method="post">

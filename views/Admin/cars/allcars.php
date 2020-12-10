@@ -53,7 +53,7 @@
                                 <td>New</td>
                                 <td><?=$row['price']?></td>
                                 <td><?=$row['type']?></td>
-                                <td><?=$row['id']?></td>
+                                <td><?=$row['model']?></td>
                                 <td></td>
                                 <td>
                                     <form action="" method="post">

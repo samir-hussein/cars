@@ -72,31 +72,34 @@ $this->setTitle("Home");
 <hr class="uk-divider-icon w-50 m-auto">
 <section class="p-5" id="home-sec3">
     <h2 class="text-center">Welcome to the auto show</h2>
-    <?php foreach ($this->loadData['aboutus'] as $row) 
+    <?php 
+    if(isset($this->loadData['aboutus'])){
+        foreach ($this->loadData['aboutus'] as $row) 
             {
             ?>
                 <p class="text-center w-75 m-auto"><?=$row['text_en']?></p>
             <?php
             }
+    }
     ?>
 </section>
 <hr class="uk-divider-icon w-50 m-auto">
 <section class="p-5" id="home-sec4">
     <div class="row">
         <div class="p-0 mx-auto col-12 col-md-4 my-3">
-        <div class="p-4 uk-box-shadow-medium">
+        <div class="p-4 uk-box-shadow-medium h-100 d-flex flex-column align-items-start">
             <h1>Looking For New Car?</h1>
             <p>Find your favorite model</p>
-            <a href="/en/brands?type=new_brands">
+            <a href="/en/brands?type=new_brands" class="w-100 mt-auto">
             <button type="button" class="w-75 d-block m-auto btn btn-primary btn-lg"><span class="mx-1" uk-icon="search"></span>Search</button>
             </a>
         </div>
         </div>
         <div class="p-0 mx-auto col-12 col-md-4 my-3">
-        <div class="p-4 uk-box-shadow-medium">
+        <div class="p-4 uk-box-shadow-medium h-100 d-flex flex-column align-items-start">
             <h1>Looking For used Car?</h1>
             <p>Find your favorite model</p>
-            <a href="/en/brands?type=used_brands">
+            <a href="/en/brands?type=used_brands" class="w-100 mt-auto">
             <button type="button" class="w-75 d-block m-auto btn btn-primary btn-lg"><span class="mx-1" uk-icon="search"></span>Search</button>
             </a>
         </div>

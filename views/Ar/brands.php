@@ -14,6 +14,7 @@ $type = str_replace("brands",'cars',$path);
 <section id="brands-sec2" class="p-5">
     <div class="row">
         <?php
+        if(isset($this->loadData['brands'])){
             foreach($this->loadData['brands'] as $row)
             {
                 ?>
@@ -22,6 +23,7 @@ $type = str_replace("brands",'cars',$path);
                 </div>
                 <?php
             }
+        }
         ?>
     </div>
 </section>
