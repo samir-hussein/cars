@@ -7,17 +7,16 @@ $this->setTitle("Home");
 
     <ul class="uk-slideshow-items">
         <?php
-            foreach($this->loadData['slider'] as $row)
-            {
-                ?>
+foreach ($this->loadData['slider'] as $row) {
+    ?>
                 <li>
                     <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
                         <img src="../assets/images/<?=$row['image']?>" alt="slider photo" uk-cover>
                     </div>
                 </li>
                 <?php
-            }
-        ?>
+}
+?>
     </ul>
 
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
@@ -43,7 +42,7 @@ $this->setTitle("Home");
                 <div>
                     <input name="price2" class="rounded uk-input uk-form-width-medium" type="text" placeholder="to">
                 </div>
-                </div>  
+                </div>
             </div>
             <div class="row m-3">
                 <div class="my-2 col-12 col-md-4">
@@ -72,16 +71,15 @@ $this->setTitle("Home");
 <hr class="uk-divider-icon w-50 m-auto">
 <section class="p-5" id="home-sec3">
     <h2 class="text-center">Welcome to the auto show</h2>
-    <?php 
-    if(isset($this->loadData['aboutus'])){
-        foreach ($this->loadData['aboutus'] as $row) 
-            {
-            ?>
+    <?php
+if (isset($this->loadData['aboutus'])) {
+    foreach ($this->loadData['aboutus'] as $row) {
+        ?>
                 <p class="text-center w-75 m-auto"><?=$row['text_en']?></p>
             <?php
-            }
-    }
-    ?>
+}
+}
+?>
 </section>
 <hr class="uk-divider-icon w-50 m-auto">
 <section class="p-5" id="home-sec4">
@@ -118,9 +116,9 @@ $this->setTitle("Home");
     </div>
     <ul class="p-0 list-unstyled d-flex justify-content-around flex-column flex-md-row flex-wrap js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center">
     <?php
-        if(isset($this->loadData['bestnewcars'])){
-            foreach($this->loadData['bestnewcars'] as $row){
-                ?>
+if (isset($this->loadData['bestnewcars'])) {
+    foreach ($this->loadData['bestnewcars'] as $row) {
+        ?>
                 <li data-color="new" class="my-3">
                 <div>
                     <div class="card uk-box-shadow-medium">
@@ -140,12 +138,12 @@ $this->setTitle("Home");
                 </div>
                 </li>
                 <?php
-            }
-        }
+}
+}
 
-        if(isset($this->loadData['bestusedcars'])){
-            foreach($this->loadData['bestusedcars'] as $row){
-                ?>
+if (isset($this->loadData['bestusedcars'])) {
+    foreach ($this->loadData['bestusedcars'] as $row) {
+        ?>
                 <li data-color="used" class="my-3">
                 <div>
                     <div class="card uk-box-shadow-medium">
@@ -165,9 +163,9 @@ $this->setTitle("Home");
                 </div>
                 </li>
                 <?php
-            }
-        }
-    ?>
+}
+}
+?>
     </ul>
 
 </div>

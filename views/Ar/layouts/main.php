@@ -1,14 +1,15 @@
 <?php
 use core\Application;
 $path = $this->request->getPath();
-$path = explode("/",$path);
+$path = explode("/", $path);
 $path = end($path);
 $param = $_SERVER['REQUEST_URI'];
-if(strpos($param,"?") !== false){
-    $param = explode('?',$param);
+if (strpos($param, "?") !== false) {
+    $param = explode('?', $param);
     $param = end($param);
+} else {
+    $param = "";
 }
-else $param = "";
 ?>
 
 <!DOCTYPE html>
@@ -18,16 +19,16 @@ else $param = "";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?=Application::$app->router->title?></title>
     <!-- Bootstrab 4 CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <!-- UIkit CSS -->
-    <link rel="stylesheet" href="assets/css/uikit.min.css" />
+    <link rel="stylesheet" href="/assets/css/uikit.min.css" />
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
     <!-- My CSS  -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/preloader.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/preloader.css">
     <!-- JQuery  -->
-    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/assets/js/jquery-3.5.1.min.js"></script>
 </head>
 <body style="direction: rtl;text-align: right;">
 
@@ -68,7 +69,7 @@ else $param = "";
                     <li class="nav-item mx-xl-4 font-weight-bold">
                         <a class="nav-link" href="/branches">فروعنا</a>
                     </li>
-                    <?php if($path === ""):?>
+                    <?php if ($path === ""): ?>
                     <li class="nav-item mx-xl-4 font-weight-bold">
                         <a class="nav-link" href="javascript:;" onclick="scrl('home-sec3');">عن الشركة</a>
                     </li>
@@ -77,7 +78,7 @@ else $param = "";
                         <a class="d-flex nav-link" href="/contact-us">تواصل معنا</a>
                     </li>
                     <li class="nav-item mx-xl-4 font-weight-bold">
-                        <a class="d-flex nav-link" href="/en<?=($path !== "")? '/'.$path."?".$param:''?>">English<span class="mx-1" uk-icon="world"></span></a>
+                        <a class="d-flex nav-link" href="/en<?=($path !== "") ? '/' . $path . "?" . $param : ''?>">English<span class="mx-1" uk-icon="world"></span></a>
                     </li>
                 </ul>
             </div>
@@ -92,15 +93,14 @@ else $param = "";
 
         <ul class="d-flex uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-6@m">
             <?php
-                foreach($this->loadData['brandsSlider'] as $row)
-                {
-                    ?>
+foreach ($this->loadData['brandsSlider'] as $row) {
+    ?>
                     <li class="align-self-center">
                         <img src="assets/images/<?=$row['image']?>" alt="car brand">
                     </li>
                     <?php
-                }
-            ?>
+}
+?>
         </ul>
 
         <a style="color:#0f6ecd" class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
@@ -151,7 +151,7 @@ else $param = "";
             </div>
             <div class="col-12 col-md-6 col-lg-3">
                 <ul class="d-inline-block p-0 m-0 list-unstyled">
-                    <li class="my-3"><a href="/en<?=($path !== "")? '/'.$path."?".$param:''?>" class="d-flex text-decoration-none"><span class="mx-1" uk-icon="world"></span>english</a></li>
+                    <li class="my-3"><a href="/en<?=($path !== "") ? '/' . $path . "?" . $param : ''?>" class="d-flex text-decoration-none"><span class="mx-1" uk-icon="world"></span>english</a></li>
                 </ul>
             </div>
         </div>
@@ -160,12 +160,12 @@ else $param = "";
         </div>
     </footer>
     <!-- Bootstrab 4 JS -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
     <!-- UIkit JS -->
-    <script src="assets/js/uikit.min.js"></script>
-    <script src="assets/js/uikit-icons.min.js"></script>
+    <script src="/assets/js/uikit.min.js"></script>
+    <script src="/assets/js/uikit-icons.min.js"></script>
     <!-- My script -->
-    <script src="assets/js/script.js"></script>
+    <script src="/assets/js/script.js"></script>
     <!-- preloader function -->
     <script>
         $(window).on("load",function(){
