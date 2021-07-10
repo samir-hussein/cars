@@ -1,12 +1,11 @@
 <?php
-    if(!isset($_SESSION)) 
-    { 
-        session_start(); 
-    } 
-    if(!isset($_SESSION['user']) || empty($_SESSION['user'])){
-        $this->response->redirect("/admin");
-        exit;
-    }
+if (!isset($_SESSION)) {
+    session_start();
+}
+if (!isset($_SESSION['user']) || empty($_SESSION['user'])) {
+    $this->response->redirect("/admin");
+    exit;
+}
 ?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
@@ -88,7 +87,7 @@
                             <li><i class="menu-icon fa fa-th"></i><a href="/admin/add-used-car">Add Used Car</a></li>
                         </ul>
                     </li>
-                    <?php if($_SESSION['type'] == "owner"):?>
+                    <?php if ($_SESSION['type'] == "owner"): ?>
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Users</a>
                         <ul class="sub-menu children dropdown-menu">
